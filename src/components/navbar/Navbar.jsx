@@ -22,14 +22,17 @@ const Navbar = () => {
         <div className='gpt3__navbar-links_logo'>
           <img src={logo} alt='logo' />
         </div>
+        
         <div className='gpt3__navbar-links_container'>
           <Menu />
         </div>
       </div>
+      
       <div className='gpt3__navbar-sign'>
         <p>Sign in</p>
         <button type='button'>Sign up</button>
       </div>
+      
       <div className='gpt3__navbar-menu'>
         {toogleMenu
           ? <RiCloseLine color='#ffffff' size={27} onClick={() => setToogleMenu(false)} />
